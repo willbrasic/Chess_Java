@@ -15,7 +15,7 @@ public class ChessResultsDBCreation {
 	      final String DB_URL = "jdbc:mysql://localhost:3306/";
 	      final String DB_CHESS_URL = "jdbc:mysql://localhost:3306/ChessResultsDB";
 	      final String USERNAME = "root";
-	      final String PASSWORD = "$Louie97";
+	      final String PASSWORD = "ENTER SQL PASSWORD";
 	      
 	      try {
 	         // Create a connection to the database.
