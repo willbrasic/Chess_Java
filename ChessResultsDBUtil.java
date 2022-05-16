@@ -14,7 +14,7 @@ public class ChessResultsDBUtil {
 	public static Connection getDBConnection(){
 		Connection conn = null;
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ChessResultsDB", "root", "$Louie97");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ChessResultsDB", "root", "ENTER PASSWORD");
 		} catch (Exception ex) {
 			System.out.println("ERROR: " + ex.getMessage());
 		}
