@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- Author: Sergio Torres and William Brasic. -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.unlv.mis768.finalproject.ChessMenuController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="2.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\wbras\OneDrive\Desktop\UNLV\Spring_2022\MIS_768\768_Project\768_Project_V4\ChessMenu.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="93.0" layoutY="41.0" text="Virtual Chess" textFill="WHITE">
+         <font>
+            <Font name="American Typewriter" size="18.0" />
+         </font>
+      </Label>
+      <HBox layoutX="80.0" layoutY="338.0" prefHeight="31.0" prefWidth="479.0">
+         <children>
+            <Button fx:id="newGameButton" mnemonicParsing="false" onAction="#changeSceneToBoard" text="New Game">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="loadHistoryButton" mnemonicParsing="false" onAction="#loadHistoryButtonListener" text="Load Match History">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="deleteHistoryButton" mnemonicParsing="false" onAction="#deleteHistoryButtonListener" text="Delete Match History">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="reviseHistoryButton" mnemonicParsing="false" onAction="#reviseHistoryButtonListener" prefHeight="26.0" prefWidth="105.0" text="Update Record">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="promptLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="83.0" layoutY="119.0" prefHeight="22.0" prefWidth="438.0" text="Please select an option from below:" textAlignment="CENTER" textFill="#fdfcfc">
+         <font>
+            <Font name="American Typewriter" size="18.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="163.0" layoutY="150.0" prefHeight="172.0" prefWidth="278.0">
+         <content>
+            <TextArea fx:id="resultArea" prefHeight="171.0" prefWidth="261.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
